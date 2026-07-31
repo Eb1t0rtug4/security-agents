@@ -44,6 +44,6 @@ The agent reads those in order, then executes.
 - Structured, bounded runs: a fixed plan and output template mean the agent isn't wandering or redoing work, which keeps each run tight.
 - The pattern is reusable: a new engagement is mostly a new `scope.txt` and `plan.md`, not a new agent from scratch.
 
-## What I'm not claiming
+## Why this is built the way it is
 
-I don't hand-write the tooling from scratch. I design these agents with AI assistance and run them in Claude Code. That's the point: you don't have to be an engineer to build agents that do real work, if you know the work cold and you're disciplined about the guardrails.
+These aren't general automations with a safety note bolted on. Coming from offensive security, I build every agent by asking how it breaks before what it does, then I close each gap. The agent is autonomous but boxed, and a human validates every finding before it counts. That inversion, safety before ability, is the whole point.
